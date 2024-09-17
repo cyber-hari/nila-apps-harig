@@ -1,0 +1,10 @@
+<div class="chart-container">
+  <h3>Student's Attendance</h3>
+  @if (studentsAttendanceData) {
+    <highcharts-chart
+      [Highcharts]="Highcharts"
+      [options]="chartOptions"
+      style="height: 270px; display: block; border: 1px solid #ececec;"
+    ></highcharts-chart>
+  }
+</div>

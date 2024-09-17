@@ -1,0 +1,69 @@
+.course-details-container {
+  background: white;
+  width: 220px;
+  border: 1px solid #8080805c;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+
+  hr {
+    border: none;
+    border-top: 0.5px solid #ececec;
+  }
+
+  .field {
+    width: 100%;
+    .title {
+      color: #3d3d3d;
+
+      &+title {
+        margin: 5px 0;
+      }
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    .credits {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+      width: 40%;
+
+      .creditName {
+        width: 150px;
+      }
+    }
+
+    .tag-container {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 12px 0;
+
+      .tag {
+        background: #a7c88f;
+        padding: 4px;
+        border-radius: 4px;
+        width: 50px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .mapped {
+      background: #2e6995 !important;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .course-details-container {
+    width: 95%;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "response": {
+    "Assignment": {
+      "pending": 30,
+      "completed": 70
+    },
+    "Quiz": {
+      "pending": 20,
+      "completed": 80
+    },
+    "Presentation": {
+      "pending": 50,
+      "completed": 50
+    },
+    "Lab": {
+      "pending": 40,
+      "completed": 60
+    },
+    "Viva": {
+      "pending": 10,
+      "completed": 90
+    }
+  }
+}

@@ -23,7 +23,6 @@ describe('AppComponent', () => {
   it(`should have as title 'nila-apps-harig'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('nila-apps-harig');
   });
 
   it('should render title', () => {

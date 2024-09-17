@@ -1,0 +1,11 @@
+<div class="chart-container">
+  <h3>Assessment Progress</h3>
+
+  @if (assessmentProgressData) {
+    <highcharts-chart
+    [Highcharts]="Highcharts"
+    [options]="chartOptions"
+    style="height: 270px; display: block; border: 1px solid #ececec;"
+    ></highcharts-chart>
+  }
+</div>

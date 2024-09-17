@@ -1,0 +1,18 @@
+{
+  "response": [
+    {
+      "courseCode": "BA3102",
+      "courseName": "Quantitative Techniques",
+      "courseType": "Program Elective",
+      "coursePeriod": "Semester 1",
+      "credits": {
+        "Lecture": 3,
+        "Tutorial": 4,
+        "Practical": 1,
+        "Project": 0
+      },
+      "courseOutcomes": ["CO2", "CO4", "CO5", "CO7", "CO13", "CO14"],
+      "coursesMapped": ["PO7", "PO10", "PO12", "PO8"]
+    }
+  ]
+}

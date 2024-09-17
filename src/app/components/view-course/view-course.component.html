@@ -1,0 +1,66 @@
+<div style="padding: 12px;">
+  @if (courseDetails) {
+  <div class="course-details-container">
+    <div class="field">
+      <b class="title">Course Code</b>
+      <p>{{ courseDetails.courseCode }}</p>
+    </div>
+
+    <hr>
+
+    <div class="field">
+      <b class="title">Course Name</b>
+      <p>{{ courseDetails.courseName }}</p>
+    </div>
+
+    <hr>
+
+    <div class="field">
+      <b class="title">Course Type</b>
+      <p>{{ courseDetails.courseType }}</p>
+    </div>
+
+    <hr>
+
+    <div class="field">
+      <b class="title">Course Period</b>
+      <p>{{ courseDetails.coursePeriod }}</p>
+    </div>
+
+    <hr>
+
+    <div class="field">
+      <b class="title">Credits ({{ creditsCount }})</b>
+      @for (item of credits; track $index) {
+      <div class="credits">
+        <span class="creditName">{{ item.creditName }}</span>
+        <span style="width: 40px;">-</span>
+        <b style="width: 40px;">{{ item.creditValue }}</b>
+      </div>
+      }
+    </div>
+
+    <hr>
+
+    <div class="field">
+      <b class="title">Course Outcomes (COs)</b>
+      <div class="tag-container">
+        @for (item of courseDetails.courseOutcomes; track $index) {
+        <p class="tag">{{ item }}</p>
+        }
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="field">
+      <b class="title">Mapped to this Course</b>
+      <div class="tag-container">
+        @for (item of courseDetails.coursesMapped; track $index) {
+        <p class="tag mapped">{{ item }}</p>
+        }
+      </div>
+    </div>
+  </div>
+  }
+</div>
